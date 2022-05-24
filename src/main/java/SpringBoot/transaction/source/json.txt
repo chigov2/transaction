@@ -1,0 +1,16 @@
+{
+    "order": {
+        "totalQuantity":3,
+        "shoppingCartId":56,
+        "totalPrice":24000
+
+    },
+    "payment":{
+        "type":"DEBIT",
+        "cardName":"Mkee Stoba",
+        "cardNumber":"4564 9878 5698 5647",
+        "expiryMonth":2,
+        "expiryYear":2025,
+        "cvc":897
+    }
+}

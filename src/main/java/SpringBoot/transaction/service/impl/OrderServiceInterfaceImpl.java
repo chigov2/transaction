@@ -10,6 +10,7 @@ import SpringBoot.transaction.repository.PaymentRepositoryInterface;
 import SpringBoot.transaction.service.OrderServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;
 
@@ -26,7 +27,8 @@ public class OrderServiceInterfaceImpl implements OrderServiceInterface
     }
 
     @Override
-    public OrderResponse placeOrder(OrderRequest orderRequest) {
+    @Transactional
+    public OrderResponse placeOrder (OrderRequest orderRequest) {
 
         //lets get info from orderRequest
         Order order = orderRequest.getOrder();
