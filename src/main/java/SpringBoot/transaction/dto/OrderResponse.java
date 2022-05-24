@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class OrderResponse {
-    private String orderTackingNumber;
+    private String orderTrackingNumber;
     private String status;
     private String message;
 }

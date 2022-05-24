@@ -45,7 +45,8 @@ public class OrderServiceInterfaceImpl implements OrderServiceInterface
         paymentRepository.save(payment);
 
         OrderResponse orderResponse = new OrderResponse();
-        orderResponse.setOrderTackingNumber(order.getOrderTrackingNumber());
+        //orderResponse.setOrderTrackingNumber(order.getOrderTrackingNumber());
+        orderResponse.setOrderTrackingNumber(order.getOrderTrackingNumber());
         orderResponse.setStatus(order.getStatus());
         orderResponse.setMessage("SUCCESS");
 
